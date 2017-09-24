@@ -22,7 +22,7 @@ def downloadData(urlname):
     return mywebpage
 
 #Function counts total image counts, calculates their percentages and displays results.
-def processImages(mywebpage):
+def processData(mywebpage):
 
     #Counts for the Image Hits
     total_image_count = 0
@@ -79,10 +79,10 @@ def processImages(mywebpage):
     print "The most popular browser is {}.".format(popular_browser)
 
 
-
+#Main function to call the other functions.
 def main():
             mywebpage = downloadData(url)
-            processImages(mywebpage)
+            processData(mywebpage)
 
 
 
